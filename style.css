@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 90vw;
+}
+
+.left {
+  background-color: hsl(235, 46%, 20%);
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 20%;
+}
+
+.left .info {
+  background-color: hsl(246, 80%, 60%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.left .info img {
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.left .info p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+
+.left .info h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.left .daylist {
+  padding: 0.5rem 2rem;
+}
+
+.left .daylist li {
+  color: rgba(255, 251, 251, 0.545);
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  width: 60%;
+  height: 100%;
+}
+
+.up,
+.down {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 1rem;
+}
+
+.up {
+  margin-bottom: 1rem;
+}
+
+.boxes {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image-box {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.image-box img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.info-box {
+  flex: 1;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1;
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.info-box:hover {
+  background-color: hsl(236, 21%, 29%);
+}
+
+.info-box .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.info-box .title-box img {
+  width: 1.2rem;
+}
+
+.info-box h4 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+
+.info-box .lit-box {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+}
+#first-active {
+  color: white !important;
+  font-weight: bold;
+}
+.activebtn {
+  color: white !important;
+  font-weight: bold;
+}
+/* Colored backgrounds */
+#b1 .image-box {
+  background-color: hsl(15, 100%, 70%);
+}
+#b2 .image-box {
+  background-color: hsl(195, 74%, 62%);
+}
+#b3 .image-box {
+  background-color: hsl(348, 100%, 68%);
+}
+#b4 .image-box {
+  background-color: hsl(145, 58%, 55%);
+}
+#b5 .image-box {
+  background-color: hsl(264, 64%, 52%);
+}
+#b6 .image-box {
+  background-color: hsl(43, 84%, 65%);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 700px) {
+  body {
+    margin: 5%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 95vw;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+
+  .left .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .left .info p {
+    margin: 0 !important;
+  }
+  .left .info img {
+    width: 25% !important;
+    margin-bottom: 0;
+  }
+
+  .left .info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .left .info p {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .left .daylist {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .left .daylist li {
+    font-size: 1rem;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .up,
+  .down {
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .boxes {
+    width: 100%;
+  }
+}
+@media (min-width: 701px) and (max-width: 1131px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .left .info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+
+  .left .info img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .left .info h1 {
+    font-size: 2rem;
+    word-wrap: break-word;
+  }
+
+  .right {
+    width: 100%;
+    margin-left: 0;
+  }
+}
