@@ -3,7 +3,7 @@
 A stylish and interactive time tracking dashboard that helps users visualize how they spend their time across various activities such as work, play, study, exercise, social, and self-care.
 
 <img src="./assets/images/Screenshot (5).png">
-see the demo <a href="">here</a>
+<p>see the demo <a href="https://amir-mirzakhani.github.io/time-dashboard/">here</a></p>
 ## 📌 Overview
 
 **Time Mentor** is a front-end web project that displays a time tracking report for a user. It provides data based on different timeframes — **Daily**, **Weekly**, and **Monthly**. The UI features activity cards that show the number of hours spent this week versus last week.
