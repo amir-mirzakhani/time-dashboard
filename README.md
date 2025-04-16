@@ -22,3 +22,30 @@ A stylish and interactive time tracking dashboard that helps users visualize how
 - Simple, clean user interface using HTML, CSS, and JavaScript
 
 ## 📂 Project Structure
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (Flexbox/Grid)
+- Vanilla JavaScript
+
+## 📸 Screenshot
+
+![Time Mentor Screenshot](./Screenshot\ (5).png)
+
+## ✅ How to Use
+
+1. Clone this repository or download the ZIP.
+2. Open `index.html` in your web browser.
+3. Click on **Daily**, **Weekly**, or **Monthly** to view your time report for each timeframe.
+
+## ✨ Future Improvements
+
+- Add local storage or backend support to store user data.
+- Allow users to input their own time data.
+- Dark/Light theme toggle.
+- Mobile responsiveness improvements.
+
+## 👤 Author
+
+**Jeremy Robson** (placeholder user name)
