@@ -48,4 +48,9 @@ A stylish and interactive time tracking dashboard that helps users visualize how
 
 ## 👤 Author
 
-**Jeremy Robson** (placeholder user name)
+Created by Amir Mirzakhani
+
+## 🎨 Design Credit
+
+Design originally by [Frontend Mentor](https://www.frontendmentor.io/) or the original designer if known.
+
